@@ -1,0 +1,16 @@
+query readData{
+ 	getMessage
+  getName
+ 	getEquipment
+  getAllMessages{
+    message
+    id
+  }
+}
+
+mutation writeData{
+  createMessage(input:{message:"ok"}){
+    message
+    id
+  }
+}
